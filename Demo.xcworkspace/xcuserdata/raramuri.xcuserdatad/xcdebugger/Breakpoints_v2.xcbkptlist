@@ -7,49 +7,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EFA25808-4649-4FD9-B7D3-F57E27E909A0"
-            shouldBeEnabled = "No"
+            uuid = "8AF4B931-7638-41C2-AC30-1B53A2C8A3C9"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Demo/UserViewModel.swift"
+            filePath = "Demo/MockNetwork.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "getData(completion:)"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "startLoading()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "EFA25808-4649-4FD9-B7D3-F57E27E909A0 - 86998ddb84e705f1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Demo.User, Swift.Error&gt;) -&gt; () in Demo.UserViewModel.getData(completion: (Swift.Optional&lt;Demo.User&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Demo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/raramuri/Desktop/Demo/Demo/UserViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "151">
-               </Location>
-               <Location
-                  uuid = "EFA25808-4649-4FD9-B7D3-F57E27E909A0 - 86998ddb84e705f1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Demo.User, Swift.Error&gt;) -&gt; () in Demo.UserViewModel.getData(completion: (Swift.Optional&lt;Demo.User&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Demo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/raramuri/Desktop/Demo/Demo/UserViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "159">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8271C8AD-1788-42D7-8406-9C1AB50159F1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Demo/MockNetwork.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "492A97AE-F731-4F20-B1A0-06285FAA5057"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Demo/MockNetwork.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "requestIsCacheEquivalent(_:to:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

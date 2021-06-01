@@ -11,11 +11,9 @@ target 'Demo' do
 
   target 'DemoTests' do
     inherit! :search_paths
-#    pod "Cuckoo"
   end
 
   target 'DemoUITests' do
-    pod "Cuckoo"
   end
 
 end

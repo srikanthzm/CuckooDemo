@@ -10,25 +10,17 @@ import Alamofire
 
 class UserViewModel {
     
-    init() {}
+    private let manager: Session
     
-//    func getData(completion: @escaping((User) -> Void)) {
-//        AF.request("http://swapi.dev/api/starships/2/").responseDecodable(of: User.self) { (response) in
-//            guard let value = response.value else { return }
-//            completion(value)
-//        }
-//    }
+    init(manager: Session = Environment.shared.session) {
+        self.manager = manager
+    }
     
-    func getData(completion: @escaping((User?) -> Void)) {
-        let sesssion = UrlSession()
-        sesssion.getUser(completion: { (result) in
-            switch result {
-            case .success(let user):
-                completion(user)
-            case .failure(_):
-                completion(nil)
-            }
-        })
+    func getData(completion: @escaping((User) -> Void)) {
+        manager.request("http://swapi.dev/api/starships/2/").responseDecodable(of: User.self) { (response) in
+            guard let value = response.value else { return }
+            completion(value)
+        }
     }
     
 }

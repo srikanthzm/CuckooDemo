@@ -5,9 +5,7 @@
 //  Created by Srikanth Thangavel on 28/05/21.
 //
 
-@testable import Demo
 import XCTest
-import Cuckoo
 
 class DemoUITests: XCTestCase {
 
@@ -15,6 +13,7 @@ class DemoUITests: XCTestCase {
 
     override func setUp() {
         app = XCUIApplication()
+        app.launchEnvironment = ["AppEnvironment": "UI-Testing"]
         continueAfterFailure = false
     }
     
@@ -25,25 +24,8 @@ class DemoUITests: XCTestCase {
     func testExample() throws {
         app.launch()
         
-        let mockUser = MockUser(name: "Mock Name")
-        let mock = MockUrlSession()
-        let urlStr  = "https://riis.com"
-        let url  = URL(string:urlStr)!
-        
-        // Arrange
-        stub(mock) { (mock) in
-            when(mock.url).get.thenReturn(url)
-        }
-                
-        stub(mock) { (mock) in
-            when(mock.getUser(completion: anyClosure())).then { (result) in
-                result(.success(mockUser))
-            }
-        }
-        
         // Act and Assert
-        wait(for: 2)
-        XCTAssertEqual(app.staticTexts["name-label"].label, mockUser.name)
+        XCTAssertEqual(app.staticTexts["name-label"].label, "Srikanth")
     }
 
 }

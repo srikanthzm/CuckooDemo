@@ -7,14 +7,11 @@
 
 import Foundation
 
-class User: Decodable {
+struct User: Decodable {
     let name: String
     
     enum CodingKeys: String, CodingKey {
         case name
     }
     
-    init(name: String) {
-        self.name = name
-    }
 }

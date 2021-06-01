@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         
         viewModel.getData { (user) in
             DispatchQueue.main.async { [weak self] in
-                self?.nameLabel.text = user?.name
+                self?.nameLabel.text = user.name
             }
         }
     }

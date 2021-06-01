@@ -6,7 +6,6 @@
 //
 
 import XCTest
-//import Cuckoo
 @testable import Demo
 
 class DemoTests: XCTestCase {
